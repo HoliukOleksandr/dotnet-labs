@@ -1,0 +1,10 @@
+<Project>
+  <!-- Єдине місце, де задається версія .NET для всіх проєктів рішення.
+       Якщо у вас встановлений .NET 9 або 8 SDK, змініть на net9.0 / net8.0. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Orders.Bll</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="15.*" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Orders.Dal\Orders.Dal.csproj" />
+    <ProjectReference Include="..\Orders.Domain\Orders.Domain.csproj" />
+  </ItemGroup>
+</Project>
