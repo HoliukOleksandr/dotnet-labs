@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <RootNamespace>Reviews.WebApi</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Serilog.AspNetCore" Version="9.*" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Presentation залежить від Application і Infrastructure (останнє — лише для реєстрації залежностей під час старту) -->
+    <ProjectReference Include="..\Reviews.Application\Reviews.Application.csproj" />
+    <ProjectReference Include="..\Reviews.Infrastructure\Reviews.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
